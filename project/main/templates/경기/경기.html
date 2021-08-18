@@ -1,0 +1,836 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 구글 폰트: main.css보다 먼저 불러올 수 있도록 한다 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Google Material Design -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../static/css/경기.css">
+    <link rel="stylesheet" href="../../static/css/header.css">
+    <title>전국 여행의 시작, 이곳저곳</title>
+    <!-- 파비콘(favorite icon) 설정 -->
+    <link rel="icon" href="../../static/images/world.png" />
+    <!--js jquery 가져오도록 설정-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!--js-->
+    <script defer src="../../static/js/경기.js"></script>
+    <script defer src="../../static/js/header.js"></script>
+    <!-- 부트스트랩 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <header class="blog-header py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+            <!-- 사이드바 -->    
+          <div class="sidebar"> 
+            <svg xmlns="http://www.w3.org/2000/svg" id="menuicon" class="menubar" viewbox="0 0 16 16" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+          <div id="sidemenu1">
+            <div class="sidemenu1-header">
+                  <div class="back">
+                    <img  id="previous0" class="previous" src="../../static/images/arrow.png" alt="뒤로가기" >
+                  </div></div>
+            <ul id="menulist1">
+              
+              <!--메뉴바 맛집-->
+              <li id="foods" >먹거리 추천(맛집)</li> 
+
+              <div id="sidemenu1-0">
+                <div class="sidemenu1-header">
+                  <div class="back">
+                    <img  id="previous1" class="previous" src="../../static/images/arrow.png" alt="뒤로가기" >
+                  </div>
+                </div>
+                <ul id="menulist1-0">
+                  <li id="서울1">서울  
+                    <div id="sidemenu1-1">
+                      <div class="sidemenu1-header">
+                        <div class="back">
+                          <img  id="previous2-1" class="previous" src="../../static/images/arrow.png" alt="뒤로가기" >
+                        </div>
+                      </div>
+                      <ul id="menulist1-1">
+                        <a href="/서울/맛집/목포집"><li id="목포집">목포집</li></a>
+                          <a href="/서울/맛집/신사소곱창"><li id="신사소곱창-신사본점">신사소곱창-신사본점</li></a>
+                          <a href="/서울/맛집/이치젠(일식당)"><li id="이치젠(일식당)">이치젠(일식당)</li></a>
+                          <a href="/서울/맛집/도쿄빙수"><li id="도쿄빙수">도쿄빙수</li></a>
+                          <a href="/서울/맛집/오사카하루"><li id="오사카하루">오사카하루</li></a>
+                          <a href="/서울/맛집/우래옥"><li id="우래옥">우래옥</li></a>
+                          <a href="/서울/맛집/명동교자"><li id="명동교자">명동교자</li></a>
+                          <a href="/서울/맛집/C27"><li id="C27">C27</li>  </a> 
+                          <a href="/서울/맛집"><li id="더보기1-1">더보기</li></a>                    
+                      </ul>
+                    </div>
+                  </li>
+
+              <li id="경기1">경기
+                <div id="sidemenu1-2">
+                  <div class="sidemenu1-header">
+                    <div class="back">
+                      <img class="previous" id="previous2-2" src="../../static/images/arrow.png" alt="뒤로가기" >
+                    </div>
+                  </div>
+                  <ul id="menulist1-2">
+                    <a href="/경기/맛집/보뚱치89"><li id="보뚱치89">보뚱치89</li></a>
+                    <a href="/경기/맛집/산으로간고등어"><li id="산으로간고등어">산으로간고등어</li></a>
+                    <a href="/경기/맛집/서현실비"><li id="서현실비">서현실비</li></a>
+                    <a href="/경기/맛집/이음만두"><li id="이음만두">이음만두</li></a>
+                    <a href="/경기/맛집/이태리동"><li id="이태리동">이태리동</li></a>
+                    <a href="/경기/맛집/채향원"><li id="채향원">채향원</li></a>
+                    <a href="/경기/맛집/태화산명가"><li id="태화산명사">태화산명가</li></a>
+                    <a href="/경기/맛집/헨디로벨리"><li id="헨디로벨리">헨디로벨리</li></a>
+                    <a href="/경기/맛집/LOFT1010"><li id="LOFT1010">LOFT1010</li></a>
+                    <a href="/경기/맛집/궁뜰"><li id="궁뜰 맛있는발표밥상">궁뜰 맛있는발표밥상</li></a>
+                    <a href="/경기/맛집/두메산골집"><li id="두메산골집">두메산골집</li></a>
+                    <a href="/경기/맛집/위베이크"><li id="위베이크">위베이크</li></a>
+                    <a href="/경기/맛집/추자리"><li id="추자리막국수">추자리막국수</li></a>
+                    <a href="/경기/맛집"><li id="더보기1-2">더보기</li></a>
+                  </ul>
+                </div>
+              </li>
+              
+              <li id="강원1">강원
+                <div id="sidemenu1-3">
+                  <div class="sidemenu1-header">
+                    <div class="back">
+                      <img class="previous" id="previous2-3" src="../../static/images/arrow.png" alt="뒤로가기" >
+                    </div>
+                  </div>
+                  <ul id="menulist1-3">
+                    <a href="/강원/맛집/만석닭강정"><li id="만석닭강정(본점)">만석닭강정(본점)</li></a>
+                    <a href="/강원/맛집/참나무숯불닭갈비"><li id="참나무숯불닭갈비">참나무숯불닭갈비</li></a>
+                    <a href="/강원/맛집/감자옹심이"><li id="감자옹심이">감자옹심이</li></a>
+                    <a href="/강원/맛집/충주상회"><li id="충주상회">충주상회</li>  </a>
+                    <a href="/강원/맛집/올드문"><li id="올드문">올드문</li></a>
+                    <a href="/강원/맛집"><li id="더보기1-3">더보기</li></a>
+                  </ul>
+                </div>
+              </li>
+
+              <li id="경북1">경북
+                <div id="sidemenu1-4">
+                  <div class="sidemenu1-header">
+                    <div class="back">
+                      <img class="previous" id="previous2-4" src="../../static/images/arrow.png" alt="뒤로가기" >
+                    </div>
+                  </div>
+                  <ul id="menulist1-4">
+                    <a href="/경북/맛집/새포항물회집"><li id="새포항물회집">새포항물회집</li></a>
+                    <a href="/경북/맛집/포갈집"><li id="포갈집">포갈집</li></a>
+                    <a href="/경북/맛집/플랜에이"><li id="플랜에이">플랜에이</li></a>
+                    <a href="/경북/맛집/맛감자탕"><li id="맛감자탕">맛감자탕</li> </a>
+                    <a href="/경북/맛집"><li id="더보기1-4">더보기</li></a> 
+                  </ul>
+                </div>
+              </li>
+
+
+              <li id="경남1">경남
+                <div id="sidemenu1-5">
+                  <div class="sidemenu1-header">
+                    <div class="back">
+                      <img class="previous" id="previous2-5" src="../../static/images/arrow.png" alt="뒤로가기" >
+                    </div>
+                  </div>
+                  <ul id="menulist1-5">
+                    <a href="/경남/맛집/란이식당"><li id="란이식당">란이식당</li></a>
+                    <a href="/경남/맛집/이키라"><li id="이키라">이키라</li></a>
+                    <a href="/경남/맛집/소토"><li id="소토">소토</li></a>
+                    <a href="/경남/맛집/통영 오미사꿀빵"><li id="통영 오미사꿀빵">통영 오미사꿀빵</li></a>
+                    <a href="/경남/맛집"><li id="더보기1-5">더보기</li></a>               
+                  </ul>
+                </div>
+              </li>
+
+              <li id="충북1">충북
+                <div id="sidemenu1-6">
+                  <div class="sidemenu1-header">
+                    <div class="back">
+                      <img class="previous" id="previous2-6" src="../../static/images/arrow.png" alt="뒤로가기" >
+                    </div>
+                  </div>
+                  <ul id="menulist1-6">
+                    <a href="/충북/맛집/아키아키"><li id="아키아키">아키아키</li></a>
+                    <a href="/충북/맛집/산아래"><li id="산아래">산아래</li></a>
+                    <a href="/충북/맛집/떡보라"><li id="떡보라">떡보라</li></a>
+                    <a href="/충북/맛집/뜰이있는짐"> <li id="뜰이있는집">뜰이있는집</li></a>
+                    <a href="/충북/맛집"><li id="더보기1-6">더보기</li></a>
+                  </ul>
+                </div>
+              </li>
+
+              <li id="충남1">충남
+                <div id="sidemenu1-7">
+                  <div class="sidemenu1-header">
+                    <div class="back">
+                      <img class="previous" id="previous2-7" src="../../static/images/arrow.png" alt="뒤로가기" >
+                    </div>
+                  </div>
+                  <ul id="menulist1-7">
+                    <a href="/충남/맛집/시골밥상"><li id="시골밥상">시골밥상</li></a>
+                    <a href="/충남/맛집/뚜쥬루과자점"><li id="뚜쥬루과자점(돌가마점)">뚜쥬루과자점(돌가마점)</li></a>
+                    <a href="/충남/맛집/장원막국수"><li id="장원막국수">장원막국수</li></a>
+                    <a href="/충남/맛집/전통딴뚝칼국수"><li id="전통딴뚝칼국수">전통딴뚝칼국수</li></a>
+                    <a href="/충남/맛집"><li id="더보기1-7">더보기</li></a>
+                  </ul>
+                </div>
+              </li>
+
+              <li id="전북1">전북
+                <div id="sidemenu1-8">
+                  <div class="sidemenu1-header">
+                    <div class="back">
+                      <img class="previous" id="previous2-8" src="../../staitc/images/arrow.png" alt="뒤로가기" >
+                    </div>
+                  </div>
+                  <ul id="menulist1-8">
+                    <a href="/전북/맛집/한국집"><li id="한국집">한국집</li></a>
+                    <a href="/전북/맛집/교동다원"><li id="교동다원">교동다원</li></a>
+                    <a href="/전북/맛집/쌍용반점"><li id="쌍용반점">쌍용반점</li></a>
+                    <a href="/전북/맛집/명문제과"><li id="명문 제과">명문 제과</li>  </a>
+                    <a href="/전북/맛집/PNB풍년제과"><li id="PNB풍년제과 본점">PNB풍년제과 본점</li></a>  
+                    <a href="/전북/맛집"><li id="더보기1-8">더보기</li></a>
+                  </ul>
+                </div>
+              </li>
+
+              <li id="전남1">전남
+                <div id="sidemenu1-9">
+                  <div class="sidemenu1-header">
+                    <div class="back">
+                      <img class="previous" id="previous2-9" src="../../static/images/arrow.png" alt="뒤로가기" >
+                    </div>
+                  </div>
+                  <ul id="menulist1-9">
+                    <a href="/전남/맛집/경도회관"><li id="경도회관">경도회관</li></a>
+                    <a href="/전남/맛집/꽃돌게장1번가"><li id="꽃돌게장 1번가">꽃돌게장 1번가</li></a>
+                    <a href="/전남/맛집/씨엘비베이커리"><li id="씨엘비 베이커리">씨엘비 베이커리</li></a>
+                    <a href="/전남/맛집/나주곰탕하얀집"><li id="나주곰탕하얀집">나주곰탕하얀집</li></a>
+                    <a href="/전남/맛집"><li id="더보기1-9">더보기</li></a>
+                  </ul>
+                </div>
+              </li>
+
+              <li id="제주1">제주
+                <div id="sidemenu1-10">
+                  <div class="sidemenu1-header">
+                    <div class="back">
+                      <img class="previous" id="previous2-10" src="../../static/images/arrow.png" alt="뒤로가기" >
+                    </div>
+                  </div>
+                 <ul id="menulist1-10">
+                  <a href="/제주/맛집/올래국수"><li id="올래국수">올래국수</li></a>
+                  <a href="/제주/맛집/돈사돈"><li id="돈사돈">돈사돈</li></a>
+                  <a href="/제주/맛집/몽상드애월"><li id="몽상드애월">몽상드애월</li></a>
+                  <a href="/제주/맛집/카페 노티드 제주"><li id="카페 노티드 제주">카페 노티드 제주</li></a>
+                  <a href="/제주/맛집"><li id="더보기1-10">더보기</li></a>
+                </ul>
+              </div>
+             </li>                    
+           </ul>
+         </div>
+
+            <!--메뉴바 관광명소-->
+          <li id="places" >관광 명소</li>
+
+          <div id="sidemenu2-0">
+            <div class="sidemenu1-header">
+              <div class="back">
+                <img id="previous1-1" class="previous" src="../../static/images/arrow.png" alt="뒤로가기" >
+              </div>
+            </div>
+            <ul id="menulist2-0">
+              <li id="서울2">서울
+                <div id="sidemenu2-1">
+                  <div class="sidemenu1-header">
+                    <div class="back">
+                      <img id="previous3-1" class="previous" src="../../static/images/arrow.png" alt="뒤로가기" >
+                    </div>
+                  </div>
+                  <ul id="menulist2-1">
+                    <a href="/서울/명소/낙산공원"><li id="낙산공원">낙산공원</li></a>
+                    <a href="/서울/명소/서울어린이대공원"><li id="서울 어린이대공원"> 서울 어린이대공원</li></a>
+                    <a href="/서울/명소/서울숲"><li id="서울숲">서울숲</li></a>
+                    <a href="/서울/명소/서울시립미술관"><li id="서울시립미술관">서울시립미술관</li></a>
+                    <a href="/서울/명소/하늘공원"><li id="하늘공원">하늘공원</li></a> 
+                    <a href="/서울/명소"><li id="더보기2-1">더보기</li></a>              
+                  </ul>
+                </div>
+              </li>
+              
+              <li id="경기2">경기
+                <div id="sidemenu2-2">
+                  <div class="sidemenu1-header">
+                    <div class="back">
+                      <img id="previous3-2" class="previous" src="../../static/images/arrow.png" alt="뒤로가기" >
+                    </div>
+                  </div>
+                  <ul id="menulist2-2">
+                    <a href="/경기/명소/광명동굴"><li id="광명동굴">광명동굴</li></a>
+                    <a href="/경기/명소/백운계곡"><li id="백운계곡">백운계곡</li></a>
+                    <a href="/경기/명소/경기에버랜드"><li id="에버랜드">에버랜드</li></a>
+                    <a href="/경기/명소"><li id="더보기2-2">더보기</li></a>
+                  </ul>
+                </div>
+              </li>
+              
+              <li id="강원2">강원
+                <div id="sidemenu2-3">
+                  <div class="sidemenu1-header">
+                    <div class="back">
+                     <img id="previous3-3" class="previous" src="../../static/images/arrow.png" alt="뒤로가기" >
+                    </div>
+                  </div>
+                  <ul id="menulist2-3">
+                    <a href="/강원/명소/테디베어팜"><li id="테디베어팜">테디베어팜</li></a>
+                    <a href="/강원/명소/이상원미술관"><li id="이상원미술관">이상권미술관</li></a>
+                    <a href="/강원/명소/DMZ박물관"><li id="DMZ 박물관">DMZ 박물관</li></a>
+                    <a href="/강원/명소"><li id="더보기2-3">더보기</li></a>
+                  </ul>
+                </div>
+              </li>
+
+              <li id="경북2">경북
+                <div id="sidemenu2-4">
+                  <div class="sidemenu1-header">
+                    <div class="back">
+                      <img id="previous3-4" class="previous" src="../../static/images/arrow.png" alt="뒤로가기" >
+                    </div>
+                  </div>
+                  <ul id="menulist2-4">
+                    <a href="/경북/명소/경주 동궁원"><li id="경주 동궁원">경주 동궁원</li> </a>
+                    <a href="/경북/명소/구미 에코랜드"> <li id="구미 에코랜드">구미 에코랜드</li></a>
+                    <a href="/경북/명소"><li id="더보기2-4">더보기</li></a>
+                  </ul>
+                </div>
+              </li>
+
+
+              <li id="경남2">경남
+                <div id="sidemenu2-5">
+                  <div class="sidemenu1-header">
+                    <div class="back">
+                      <img id="previous3-5" class="previous" src="../../static/images/arrow.png" alt="뒤로가기" >
+                    </div>
+                  </div>
+                  <ul id="menulist2-5">
+                    <a href="/경남/명소/온더선셋"><li id="온더선셋(루프탑카페)">온더선셋(루프탑카페)</li></a>
+                    <a href="/경남/명소/울산양떼목장"><li id="농업회사법인울산양떼목장">농업회사법인울산양떼목장</li></a>
+                    <a href="/경남/명소"><li id="더보기2-5">더보기</li></a>               
+                  </ul>
+                </div>
+              </li>
+
+              <li id="충북2">충북
+                <div id="sidemenu2-6">
+                  <div class="sidemenu1-header">
+                    <div class="back">
+                      <img id="previous3-6" class="previous" src="../../static/images/arrow.png" alt="뒤로가기" >
+                    </div>
+                  </div>
+                  <ul id="menulist2-6">
+                    <a href="/충북/명소/의림지"><li id="의림지">의림지</li></a>
+                    <a href="/충북/명소/고수동굴"><li id="고수동굴">고수동굴</li></a>
+                    <a href="/충북/명소/단양다누리아쿠아리움"><li id="단양다누리아쿠아리움">단양다누리아쿠아리움</li></a>
+                    <a href="/충북/명소"><li id="더보기2-6">더보기</li></a>
+                  </ul>
+                </div>
+              </li>
+
+              <li id="충남2">충남
+                <div id="sidemenu2-7">
+                  <div class="sidemenu1-header">
+                    <div class="back">
+                      <img id="previous3-7" class="previous" src="../../static/images/arrow.png" alt="뒤로가기" >
+                    </div>
+                  </div>
+                  <ul id="menulist2-7">
+                    <a href="/충남/명소/해미읍성"><li id="해미읍성">해미읍성</li></a>
+                    <a href="/충남/명소/궁남지"><li id="궁남지">궁남지</li></a>
+                    <a href="/충남/명소/개화예술공원"><li id="개화예술공원">개화예술공원</li></a>
+                    <a href="/충남/명소"><li id="더보기2-7">더보기</li></a>
+                  </ul>
+                </div>
+              </li>
+
+              <li id="전북2">전북
+                <div id="sidemenu2-8">
+                  <div class="sidemenu1-header">
+                    <div class="back">
+                      <img id="previous3-8" class="previous" src="../../static/images/arrow.png" alt="뒤로가기" >
+                    </div>
+                  </div>
+                  <ul id="menulist2-8">
+                    <a href="/전북/명소/전주한옥마을"><li id="전주한옥마을">전주한옥마을</li></a>
+                    <a href="/전북/명소/군산구불길"><li id="군산 구불길">군산 구불길</li></a>
+                    <a href="/전북/명소"><li id="더보기2-8">더보기</li></a>
+                  </ul>
+                </div>
+              </li>
+
+              <li id="전남2">전남
+                <div id="sidemenu2-9">
+                  <div class="sidemenu1-header">
+                    <div class="back">
+                      <img id="previous3-9" class="previous" src="../../static/images/arrow.png" alt="뒤로가기" >
+                    </div>
+                  </div>
+                  <ul id="menulist2-9">
+                    <a href="/전남/명소/순천만습지"><li id="순천만습지">순천만습지</li></a>
+                    <a href="/전남/명소/향일암"><li id="향일암">향일암</li></a>
+                    <a href="/전남/명소/담양죽녹원"><li id="단양 죽녹원">단양 죽녹원</li></a>
+                    <a href="/전남/명소"><li id="더보기2-9">더보기</li></a>
+                  </ul>
+                </div>
+              </li>
+
+              <li id="제주2">제주
+                <div id="sidemenu2-10">
+                  <div class="sidemenu1-header">
+                    <div class="back">
+                      <img id="previous3-10" class="previous" src="../../static/images/arrow.png" alt="뒤로가기" >
+                    </div>
+                  </div>
+                 <ul id="menulist2-10">
+                    <a href="/제주/명소/성산일출봉"><li id="성산일출붕">성산일출봉</li></a>
+                    <a href="/제주/명소/안돌오름"><li id="안돌오름">안돌오름</li></a>
+                    <a href="/제주/명소/제주제트보트"><li id="제주제트보트">제주제트보트</li></a>
+                    <a href="/제주/명소"><li id="더보기2-10">더보기</li></a>
+                  </ul>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+      <!-- 목표, 설명 창 -->
+
+            <div class="explanation">
+                <img onclick="Block()" class="bulb_icon"  src="../../static/images/question.png" alt="전구아이콘">
+                <div id="page">
+                  <img onclick="None()" class="close_icon" src="../../static/images/close.png" alt="닫기버튼">
+                  <p style="font-weight: bolder; font-size: 20px;"><img src="../../static/images/world.png" style="width: 30px;" alt="logo">&nbsp;이곳저곳은 <b style="font-size: 23px;" >'왜'</b> 제작되었나요?</p>
+                  <p style="font-weight: bolder;">상업자들을 위해</p>
+                  <p>
+                    코로나 시대가 시작된 후로 사람들이 섣불리 외출하지 못하게 됨에 따라 간단한 국내 여행조차 제한되는 양상이 전개되고 있습니다. 
+                    결과적으로 식당, 지역 관광명소 등 여행지 주변의 상업 활동이 침체되는 상황입니다. 이러한 상황을 개선하기 위해 여행지와 음식점에 대한 한눈에 들어오는 유용한 정보를 제공하여, 
+                    여행자들의 합리적인 선택을 돕는 플랫폼을 통해 여행 관련 상업을 부흥시키고자 이 웹페이지 ‘이곳저곳’을 제작하기로 하였습니다.
+                  </p>
+                  <p style="font-weight: bolder;">소비자들을 위해</p>
+                  <p>
+                    이제 여행은 코로나19와 함께하는 막연한 일상이 되었습니다. 
+                    이에 여행자들에게 실시간 코로나 상황을 전하고, 안전한 여행 목적지를 선택하여 여행지와 음식점 정보를 한 눈에 제공하는 플랫폼의 필요성을 느꼈습니다. 
+                    이제 국내 여행자들이 ‘이곳저곳’에서 제공하는 코로나 및 여행지 정보를 통해 여행지를 정하거나, 
+                    많은 확진자가 발생하는 지역에서는 여행을 자제하는 등 코로나 시대에 현명한 여행 결정을 내릴 수 있길 바라며 웹페이지 ‘이곳저곳’을 제작하였습니다.
+                  </p>
+                  <p style="font-weight: bolder; font-size: 20px;"><img src="../../static/images/world.png" style="width: 30px;" alt="logo">&nbsp;이곳저곳 100% 즐기는법!</p>
+                  <p><b>*</b> 지도를 눌러 원하는 지역의 맛집과 명소들을 알아본다.
+                    <br><b>*</b> 로그인 옆에 확진자가 높은 TOP5 순위를 확인하여, 확진자 수가 높은 지역을 피하는데 도움을 얻는다.
+                    <br><b>*</b> 실시간으로 업로드되는 지역별 확진자 수를 확인하고, 코로나 확진자 수를 유의하여 방문을 고려한다.
+                    <br><b>*</b> 여행지를 다녀온 후, 회원가입&로그인을 하여 방문지에 대한 리뷰를 남긴다.
+                    <p><b>*</b> <b>'이곳저곳' 페이지에 자신의 영업소가 보여지게 하고 싶다면?? </b> <br>메인 페이지의 '영업소 등록하기'를 눌러 정보를 입력한다.
+                    <br><b>*</b> <b>어디를 여행갈지 모르겠다면??</b> <br>첫 페이지 아래에 있는 이곳저곳이 추천하는 국내 여행지를 확인해본다.
+                    <br><b>*</b> <b>지역별 모든 맛집과 명소들을 한눈에 확인하고 싶다면??</b> <br> 메뉴바에서 해당지역을 눌러 확인해본다!!</p>
+                    </p>
+                </div>
+            </div>
+
+            
+            
+            <div class="col-4 text-center">
+              <!-- 로고 이미지 -->
+              <a class="blog-header-logo text-dark" href="/"><img id="logo" src="../../static/images/world.png" alt="logo"> 이곳저곳</a>  
+            </div>
+            <!--검색/로그인/회원가입-->
+            <div class="col-4 d-flex justify-content-end align-items-center">
+              <!-- 코로나 확진자 순위 -->
+              <div id="corona-top5"><p>지역별 확진자의 비율 TOP5</p></div>
+              <div class="rolling_box">
+                <ul id ="rolling_box">
+                  <li class="card_sliding" id ="first"><p></p></li>
+                  <li class="" id ="second"><p></p></li>
+                  <li class="" id ="third"><p></p></li>
+                </ul>
+                <script>
+                  const rollingData = [];
+                  $.ajax({
+                      method: "GET",
+                      url: "https://api.corona-19.kr/korea/?serviceKey=7TNc6tdHG3bajrI9VBeAoUPpgCMO8Ww2u",
+                  })
+                      .done(function (msg) {
+                          console.log(msg);
+                          rollingData.push("<strong>" +"1."+ msg.city1n + "(" + msg.city1p + "%)" + "</strong>" );
+                          rollingData.push("<strong>"+"2."+ msg.city2n + "(" + msg.city2p + "%)" + "</strong>"  );
+                          rollingData.push("<strong>"+"3."+ msg.city3n + "(" + msg.city3p + "%)"  +  "</strong>" );
+                          rollingData.push("<strong>"+"4."+ msg.city4n  + "(" + msg.city4p + "%)" + "</strong>" );
+                          rollingData.push("<strong>"+"5." + msg.city5n + "(" + msg.city5p + "%)"  + "</strong>" );
+                      });                    
+                </script> 
+              </div>
+              <!--로그인, 회원가입-->
+              <a class="btn btn-sm btn-outline-secondary" href="/login/">로그인</a>
+              &nbsp; 
+              <a class="btn btn-sm btn-outline-secondary" href="/signup/">회원가입</a>
+            </div>
+          </div>
+        </header>
+      
+              
+          <div class="nav-scroller py-1 mb-2">
+            <hr>
+            <nav class="nav d-flex justify-content-between">
+              <a class="p-2 link-secondary" href="/서울">서울</a>
+            <a class="p-2 link-secondary-main" href="/경기">경기</a>
+            <a class="p-2 link-secondary" href="/강원">강원</a>
+            <a class="p-2 link-secondary" id="underline1" href="/경북">경북</a>
+            <a class="p-2 link-secondary" id="underline2" href="/경남">경남</a>
+            <a class="p-2 link-secondary" id="underline3" href="/충북">충북</a>
+            <a class="p-2 link-secondary" id="underline4" href="/충남">충남</a>
+            <a class="p-2 link-secondary" id="underline5" href="/전북">전북</a>
+            <a class="p-2 link-secondary" id="underline6" href="/전남">전남</a>
+            <a class="p-2 link-secondary" id="underline7" href="/제주">제주</a>
+            </nav>
+            <hr>
+          </div>
+        
+  <!--grid(먹거리 추천(맛집)&관광명소 누르는 부분) -->
+  <div class="row mb-3">
+    <a class="col themed-grid-col1" href="/경기/">Home</a>
+    <a class="col themed-grid-col2" href="/경기/맛집/">먹거리 추천(맛집)</a>
+    <a class="col themed-grid-col3" href="/경기/명소/">관광명소</a>
+  </div>
+
+    <main class="container">
+      <div class="background">
+        <h2 class="home_title" > Today's PICK</h2>
+        <div id="covid-19-newCase">
+          <hn>오늘의 신규 확진자 수:&nbsp;</hn>
+          <script>
+            $.ajax({
+                method: "GET",
+                url: "https://api.corona-19.kr/korea/country/new/?serviceKey=7TNc6tdHG3bajrI9VBeAoUPpgCMO8Ww2u",
+  
+            })
+                .done(function (msg) {
+                    console.log(msg);
+                    console.log(msg.gyeonggi);
+                    $( "hn" ).append( "<strong>"+ msg.gyeonggi.newCase+"</strong>" );
+                });
+          </script>
+        </div>
+      <a href="/경기/명소/광명동굴">
+        <div class="card">
+          <div class="row g-0">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경기-광명동굴.jpeg" role="img" aria-label="Placeholder: Image" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+              </div>
+              <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">광명동굴</h5>
+                    <p class="card-text"><small><b>주소:</b>경기 광주시 오포읍 보뚱치길 89 1층</small></p>
+                    <p class="card-text"><small><b>입장료:</b> 어른-6,000원/ 어른(단체)-5,000원/ 군인-4,000원/ 군인(단체)-3,500원/ 청소년-3,500원</small></p>
+                    <p class="card-text"><small><b>영업시간:</b>10:00~18:00 </small></p>
+                  </div>
+              </div>
+              </div>
+          </div>
+        </a>
+      
+        <a href="/경기/명소/백운계곡">
+        <div class="card">
+          <div class="row g-0">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경기-백운계곡.jpeg" role="img" aria-label="Placeholder: Image" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+              </div>
+              <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">백운계곡</h5>
+                    <p class="card-text"><small><b>주소:</b> 경기 포천시 이동면 도평리</small></p>
+                    <p class="card-text"><small><b>입장료:</b> 무료</small></p>
+                    <p class="card-text"><small><b>영업시간:</b> 24시간 개방 </small></p>
+                  </div>
+              </div>
+          </div>
+        </div>
+        </a>
+  
+      <a href="/경기/명소/경기에버랜드">
+      <div class="card">
+          <div class="row g-0">
+              <div class="col-md-4">
+                <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경기-에버랜드.jpeg" role="img" aria-label="Placeholder: Image"  focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+              </div>
+              <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">에버랜드</h5>
+                    <p class="card-text"><small><b>주소:</b>경기 용인시 처인구 포곡읍 에버랜드로 199</small></p>
+                    <p class="card-text"><small><b>입장료:</b> 자유이용권- 30000만원 이하(특가,할인 등에 따라 다름)</small></p>
+                    <p class="card-text"><small><b>개장시간:</b> 10:00-21:00 </small></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </a>
+
+    <a href="/경기/맛집/보뚱치89">
+      <div class="card">
+        <div class="row g-0">
+            <div class="col-md-4">
+              <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경기-보뚱치89.jpeg" role="img" aria-label="Placeholder: Image" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">보뚱치89</h5>
+                  <p class="card-text"><small><b>주소:</b>경기 광주시 오포읍 보뚱치길 89 1층</small></p>
+                  <p class="card-text"><small><b>대표메뉴:</b>아메리카노, 카페라떼 등</small></p>
+                  <p class="card-text"><small><b>영업시간:</b>10:00~18:00 </small></p>
+                </div>
+            </div>
+        </div>
+     </div>  
+   </a>
+
+   <a href="/경기/맛집/산으로간고등어">
+    <div class="card">
+        <div class="row g-0">
+            <div class="col-md-4">
+              <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경기-산으로간고등어.jpeg" role="img" aria-label="Placeholder: Image" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">산으로간고등어</h5>
+                  <p class="card-text"><small><b>주소:</b>경기 용인시 수지구 고기로 126 </small></p>
+                  <p class="card-text"><small><b>대표메뉴:</b>고등어구이, 갈치구이, 삼치구이, 임연수구이 등</small></p>
+                  <p class="card-text"><small><b>영업시간:</b> 매일 11:00 - 17:00</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </a>
+
+  <a href="/경기/맛집/서현실비">
+    <div class="card">
+        <div class="row g-0">
+            <div class="col-md-4">
+              <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경기-서현실비.jpeg" role="img" aria-label="Placeholder: Image"  focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">서현실비</h5>
+                  <p class="card-text"><small><b>주소:</b>경기 성남시 분당구 황새울로311번길 14 서현리더스빌딩</small></p>
+                  <p class="card-text"><small><b>대표메뉴:</b>숙성목살, 두툼오겹살, 얇은오겹살, 가브리살, 항정살, 갈비쪽살 등 </small></p>
+                  <p class="card-text"><small><b>영업시간:</b> 매일 11:30 - 22:30(연중무휴) / 런치-월~금 14:00까지</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </a>
+
+  <a href="/경기/맛집/이음만두">
+    <div class="card">
+        <div class="row g-0">
+            <div class="col-md-4">
+              <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경기-이음만두.jpeg" role="img" aria-label="Placeholder: Image"  focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">이음만두</h5>
+                  <p class="card-text"><small><b>주소:</b> 경기 광주시 오포읍 문형산길 74</small></p>
+                  <p class="card-text"><small><b>대표메뉴:</b>명품한우시래기만두 등 </small></p>
+                  <p class="card-text"><small><b>영업시간:</b> 11:00~22:00 </small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+ </a>
+
+  <a href="/경기/맛집/이태리동">
+    <div class="card">
+        <div class="row g-0">
+            <div class="col-md-4">
+              <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경기-이태리동.jpeg" role="img" aria-label="Placeholder: Image"  focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">이태리동</h5>
+                  <p class="card-text"><small><b>주소:</b>경기 수원시 팔달구 향교로 27-1 리오빌딩 지하1층 </small></p>
+                  <p class="card-text"><small><b>대표메뉴:</b>까르보나라, 스텔라피자, 마르게리따 피자, 부채살 스테이크, 라코타 치즈 샐러드 등 </small></p>
+                  <p class="card-text"><small><b>영업시간:</b> 매일 11:30 - 21:30 (Last order 8:30 p.m.)</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </a>  
+
+  <a href="/경기/맛집/채향원">
+    <div class="card">
+        <div class="row g-0">
+            <div class="col-md-4">
+              <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경기-채향원.jpeg" role="img" aria-label="Placeholder: Image" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">채향원</h5>
+                  <p class="card-text"><small><b>주소:</b>경기 광주시 오포읍 봉골길171번길 8</small></p>
+                  <p class="card-text"><small><b>대표메뉴:</b>유황오리백숙찰밥, 모듬바베큐 등 </small></p>
+                  <p class="card-text"><small><b>영업시간:</b> 11:00~21:30 </small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </a>
+
+  <a href="/경기/맛집/태화산명가">
+    <div class="card">
+        <div class="row g-0">
+            <div class="col-md-4">
+              <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경기-태화산명가.jpeg" role="img" aria-label="Placeholder: Image"  focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">태화산명가</h5>
+                  <p class="card-text"><small><b>주소:</b>경기 광주시 곤지암읍 도척윗로 35</small></p>
+                  <p class="card-text"><small><b>대표메뉴:</b>숯불닭갈비, 냉모밀, 막국수 등 </small></p>
+                  <p class="card-text"><small><b>영업시간:</b> 11:00 - 21:30 (월요일 휴무) </small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </a>
+
+  <a href="/경기/맛집/헨디로벨리">
+    <div class="card">
+        <div class="row g-0">
+            <div class="col-md-4">
+              <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경기-헨디로벨리.jpeg" role="img" aria-label="Placeholder: Image"  focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">헨디로벨리</h5>
+                  <p class="card-text"><small><b>주소:</b>경기 고양시 덕양구 통일로893번길 62 </small></p>
+                  <p class="card-text"><small><b>대표메뉴:</b>생목살, 폭립, 핸드드랍커피 등</small></p>
+                  <p class="card-text"><small><b>영업시간:</b>평일 17:00 - 23:00(상담시간 11:00~20:00)[월요일, 화요일 휴무], 주말 12:00 - 23:00 </small></p>
+              </div>
+          </div>
+        </div>
+    </div>
+  </a>
+
+  <a href="/경기/맛집/LOFT1010">
+    <div class="card">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경기-LOFT1010.jpeg" role="img" aria-label="Placeholder: Image"  focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">LOFT1010</h5>
+            <p class="card-text"><small><b>주소:</b>경기 광주시 곤지암읍 신대길34번길 10-14</small></p>
+            <p class="card-text"><small><b>대표메뉴:</b>아메리카노, 마늘빵빵, 치킨 샌드위치 등</small></p>
+            <p class="card-text"><small><b>영업시간:</b> 11:00~22:00 </small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <a href="/경기/맛집/궁뜰">
+    <div class="card">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경기-궁뜰.jpeg" role="img" aria-label="Placeholder: Image"  focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">궁뜰 맛있는발표밥상</h5>
+            <p class="card-text"><small><b>주소:</b>경기 광주시 곤지암읍 신대길34번길 10-14</small></p>
+            <p class="card-text"><small><b>대표메뉴:</b>아메리카노, 마늘빵빵, 치킨 샌드위치 등</small></p>
+            <p class="card-text"><small><b>영업시간:</b> 매일 11:00 - 21:00</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <a href="/경기/맛집/두메산골집">
+    <div class="card">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경기-두메산골집.jpeg" role="img" aria-label="Placeholder: Image"  focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+        </div>
+        <class class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">두메산골집</h5>
+            <p class="card-text"><small><b>주소:</b>경기 광주시 남한산성면 불당길37번길 66-11</small></p>
+            <p class="card-text"><small><b>대표메뉴:</b>오리구이(한마리), 능이버섯백숙, 한방백숙(한마리) 등</small></p>
+            <p class="card-text"><small><b>영업시간:</b> 매일 11:00 - 20:00 </small></p>
+          </div>
+        </class>
+        </div>
+    </div>
+  </a>
+
+  <a href="/경기/맛집/위베이크">
+    <div class="card">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경기-위베이크.jpeg" role="img" aria-label="Placeholder: Image"  focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">위베이크</h5>
+            <p class="card-text"><small><b>주소:</b>경기 광주시 남한산성면 남한산성로 59-3</small></p>
+            <p class="card-text"><small><b>대표메뉴:</b>히비스커스 유자티, 몽블랑 등</small></p>
+            <p class="card-text"><small><b>영업시간:</b> 매일 10:30 -21:00</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <a href="/경기/맛집/추자리막국수">
+    <div class="card">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img class="bd-placeholder-img" width="100%" height="180px" src="../../static/images/경기-추자리막국수.jpeg" role="img" aria-label="Placeholder: Image"  focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">추자리막국수</h5>
+            <p class="card-text"><small><b>주소:</b>경기 광주시 오포읍 오포로859번길 6</small></p>
+            <p class="card-text"><small><b>대표메뉴:</b>물/비빔 막국수(소불고기전골 포함) 등</small></p>
+            <p class="card-text"><small><b>영업시간:</b> 매일 11:00-21:00 (브레이크 타임 16:00-17:00)</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+      </div>
+    </main>
+    <!--scroll to top -->
+    <div class="material-icons-outlined" id="scrollToTop">arrow_circle_up</div>
+    </div> 
+  </body>
+
+<footer>
+  <div>Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+  <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+  <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+</footer> 
+</html>

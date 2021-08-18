@@ -1,0 +1,223 @@
+/* 로고 및 기본 설정 */
+#logo{
+    width:50px;
+    height: 50px;
+}
+
+a{text-decoration: none;
+z-index: 5;}
+
+.nav-scroller a:hover{text-decoration: underline;
+color:#000;
+font-size:18px}
+
+.text-center{
+    font-family: "Do Hyeon", serif;
+    font-size: 30px;
+    font-weight: 500;
+    
+}
+/*container */
+.container{
+position: flex;
+margin-left: 8%;
+margin-right: 8%;
+width: 84%;
+}
+
+/*지역> 명소> 명소이름*/
+.route{
+    margin-left: 9%;
+    width: 82%;
+}
+.breadcrumb{
+    margin-top: 20px;
+    font-size: 25px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+}
+.breadcrumb a{
+    color: #000;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+
+}
+
+/*명소 타이틀 */
+.themed-grid-col1 {
+    margin-left: 9%;
+    width: 82%;
+    height: 50px;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    background-color: #8bb6f7;
+    border: 1px solid #8bb6f7;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    opacity: 0.7; /*투명도 */
+    color: #000;
+    border-radius: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+}
+/*명소 이미지 */
+.themed-grid-col2 {
+    margin-left: 9%;
+    width: 20%;
+    height: 170px;
+    padding-left: 0px;
+    padding-right: 0px;
+    cursor: pointer;
+    margin-top: 30px;
+    color: #000;
+    border-radius: 20px;
+}
+/*명소 기본정보 */
+.themed-grid-col3 {
+    margin-left: 30%;
+    width: 61%;
+    height: 170px;
+    position: relative;
+    padding-top: .90rem;
+    padding-left: .90rem;
+    top:-170px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 400;
+    padding-bottom: .50rem;
+    background-color: #8bb6f7;
+    border: 1px solid #8bb6f7;
+    text-align: left;
+    cursor: pointer;
+    font-size: 15px;
+    opacity: 0.7; /*투명도 */
+    color: #000;
+    border-radius: 20px;
+}
+/* 주요 글씨 두껍게 */
+.themed-grid-col3 b{
+    font-weight: 700;
+    color:black
+}
+.themed-grid-col3 p{
+    color: black;
+}
+
+/* 지도 위치 */
+#maps{
+    position: relative;
+    margin-left: 9%;
+    width:82%;
+    height: 500px;
+    margin-top: -100px;
+    border-radius: 40px;
+}
+/* 거리 계산 버튼 */
+#distance{
+    position: relative;
+    z-index: 5;
+    margin-left: calc(9% + 450px);
+    margin-top:-90px;
+    width: 400px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    border-radius: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    padding-top: 3px;
+}
+
+/* 리뷰 */
+/* 리뷰 참여하기 누르는 박스*/
+#review-item{
+    left: 20%;
+    
+}
+#review-logo{
+    width:50px;
+    height: 50px;
+    margin-top: 20px;
+}
+.review-contentname1 p{
+    margin-top: -40px;
+    margin-left: calc(50px + 7%);
+}
+/* 여는 아이콘 */
+#btn--open {
+    top: 40px;
+    display: block;
+    position: relative;
+    margin-right: 100px; 
+    float: right;   
+}
+/* 리뷰 */
+.col{
+    width:84%;
+    margin-left: 8.5%;
+    margin-top: 5%;
+    margin-bottom: -20px;
+}
+/* 리뷰 */
+.col h2{
+    font-size: 25px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700; 
+    margin-bottom: 20px;
+}
+.card-header{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+}
+.card-body{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 400;
+}
+.card-body h5{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+}
+/*리뷰 안 공감 버튼*/
+.material-icons-outlined{
+    margin-left: 97%;
+
+}
+
+/* 리뷰 속 별점 */
+.review-rating .rate_radio {
+    position: relative;
+    display: inline-block;
+    z-index: 20;
+    opacity: 0.001;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    cursor: pointer;
+    vertical-align: top;
+    display: none;
+}
+.review-rating .rate_radio + label{
+    margin-left: 0;
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    background-image: url('../../../images/starrate/starrate.png');
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    cursor: pointer;
+    background-color: dimgray;
+    margin-top: -10px;
+}
+.review-rating .rate_radio:checked + label {
+    background-color:rgb(255, 217, 0);
+}
+/* footer */
+footer {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    background: #cccccc;
+    top:100px;}

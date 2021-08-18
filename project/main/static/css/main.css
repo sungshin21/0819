@@ -1,0 +1,403 @@
+/* 로고 및 기본 설정 */
+#logo{
+    width:50px;
+    height: 50px;
+}
+
+a{
+    text-decoration: none;
+    z-index: 5;
+    color: black;
+}
+
+.nav-scroller a:hover{
+    text-decoration: underline;
+    color:#000;
+    font-size:18px;
+}
+
+.text-center{
+    font-family: "Do Hyeon", serif;
+    font-size: 30px;
+    font-weight: 500;  
+}
+
+/* 메뉴바 */
+.sidebar{
+    width: 35px;
+    height: 35px;
+    fill: currentColor;
+    cursor: pointer;
+    margin-top: 1%;
+}
+.sidebar .menubar{
+    width: 35px;
+    height: 35px;
+    fill: currentColor;
+    cursor: pointer;
+}
+.text-center{
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+/* 목표, 설명 팝업창  */
+.explanation{
+    width: 36px;
+    margin-left: -4%;
+}
+.bulb_icon{
+    cursor: pointer;
+    position: absolute;
+    opacity: 0.5;
+    top: 27px;
+    width: auto;
+}
+.close_icon{
+    float: right;
+    width: 20px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+#page{
+    z-index: 10;
+    position: absolute;
+    width: 770px;
+    height: 730px;
+    background-color: #8bb6f7;
+    border:1px solid #8bb6f7;  padding:10px;
+    top: 60px;
+    border-radius: 10px;
+    display: none;
+    box-shadow: 6px 6px 6px 6px rgb(0 0 0 / 10%),3px 3px 3px 3px rgb(0 0 0 / 10%) ;
+}
+/* 코로나 순위 */
+#corona-top5{
+    font-size: 14px;
+    width: 50%;
+    color: rgb(255, 0, 0);
+    margin-right: -55%;
+    margin-top: -3%;
+    margin-bottom: -10%;
+}
+
+.rolling_box{
+    width: 200px;
+    height: 40px;
+    border: 1px solid #848484;
+    margin-right: 35%;
+
+}
+.rolling_box ul {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    list-style: none;
+}
+
+.rolling_box ul li {
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    position:absolute;
+    transition: top .75s;
+    top: 100%;
+    z-index: 1;
+    background-color: #ffffff;
+    margin-left: -34px;
+}
+.card_sliding{
+    top: 0 !important;
+    z-index: 100 !important;
+} 
+
+.card_sliding_after{
+    top: -100% !important;
+    z-index: 10 !important;
+}
+
+.rolling_box ul li p {
+    font-size: 17px;
+    line-height: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.before_slide {
+    transform: translateY(100%);
+}
+
+.after_slide {
+    transform: translateY(0);
+}
+
+/* 지도 옆 코로나 실시간 업데이트 시간*/
+#corona-19-updateTime{
+    margin-top: 4%;
+    margin-left: 58%;
+    font-size: 10x;
+    color: rgb(68, 68, 247);
+}
+
+/* 지도 관련 기본 세팅*/
+#koreamap{
+    position: absolute;
+    height: 900px;
+    width:400px;
+    left: 13%;
+   /* margin-left: -400px; */
+    top:180px;
+    z-index: 9;
+   
+}
+.land{
+    fill: #cccccc;
+    fill-opacity: 1;
+    stroke:white;
+    stroke-opacity: 1;
+    stroke-width:0.5;
+    cursor: pointer;
+}
+.land:hover{
+    fill: #000;
+}
+
+/* 슬라이더 */
+#carouselExampleFade{
+    /*슬라이더 가운데 정렬 */
+    position: absolute;
+    top: 1180px;
+    left: 50%;
+    margin-left: -480px;
+}
+.carousel-inner{
+    /* 슬라이더 크기 */
+    width: 960px;
+    height: 500px;
+    object-fit: scale-down;
+    border-radius: 30px;
+    margin-bottom: 50px;
+}
+
+/* 슬라이더 텍스트 작성 */
+.carousel-item .silder-text{
+    position: absolute;
+    top:350px;
+    left:30px;
+    /* background: blueviolet; */
+    z-index: 50;
+}
+.carousel-item p{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 400;
+}
+.carousel-item h1{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+
+}
+/* 제목 텍스트 작성 */
+#title1{
+    position: absolute;
+    margin-top: 30px;
+    margin-left:150px;
+}
+#title2{
+    position: absolute;
+    margin-top: 900px;
+   margin-left: 150px;
+}
+#title1 p{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+#title2 p{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+
+/* footer */
+footer {
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    background: #cccccc;
+    top:1800px
+}
+
+
+/* scrolltotop 아이콘 둥둥 뜨게 할 애니메이션 작성 */
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+/*Scroll To Top 아이콘 배치 */
+
+#scrollToTop {
+    color: #444343;
+    cursor: pointer;
+    animation: float 6s ease infinite;
+    font-size: 70px;
+    z-index: 5;
+   
+    /* 블록 속성 만들기*/
+    display: inline-block; 
+    position:fixed;
+    bottom:20px;
+    right:3%;
+    opacity:0;
+    transition: 0.4s;
+}
+#current2{
+    width: 100px;
+    height: 300px;
+    display: none;
+}
+.dropdown-item:hover > #current2{
+    display: block;
+}
+/* 메뉴 연습 중 */
+#foods{
+    margin-left: 3px;
+    margin-bottom: 10px;
+}
+#places{
+    margin-left: 3px;
+}
+/*뒤로가기 버튼*/
+.back{
+    width: 10px;
+    height: 10px;
+    margin-top: -18px;
+    margin-left: -10px;
+    cursor: pointer;
+}
+.previous{
+    width: 25px;
+    height: 25px;
+}
+/*메뉴바의 지역 창*/
+#sidemenu1{
+    position: fixed;
+    top:0px;
+    left:0px;
+    height: 100vh;
+    width:250px;
+    background-color: #8bb6f7;
+    transform: translateX(-100%);
+    transition: .4s;
+    z-index: 999;
+    font-family: 'Nanum Gothic', sans-serif;
+     font-size: 18px;
+    font-weight: 400;
+}
+.sidemenu1-header{
+    position: block;
+    padding: 25px;
+    width: 250px;
+    background-color: #5194f8b7;
+    transition: .4s;
+    z-index: 10;
+}
+/*메뉴바의 지역별 맛집 창*/
+#menulist1,#menulist1-0,#menulist1-1,#menulist1-2,#menulist1-3,#menulist1-4,#menulist1-5,#menulist1-6,#menulist1-7,#menulist1-8,#menulist1-9,#menulist1-10{
+    top:65px;
+    position: absolute;
+    list-style: none;
+    /* font-size: 20px; */
+    line-height: 40px;
+    /* font-weight: 600; */
+}
+#sidemenu1-0,#sidemenu2-0{
+    position: fixed;
+    top:0px;
+    left:0px;
+    height: 100vh;
+    width:250px;
+    background-color: #8bb6f7; 
+    transform: translateX(-100%);
+    transition: .4s;
+    z-index: 10;
+}
+#sidemenu1-1,#sidemenu1-2,#sidemenu1-3,#sidemenu1-4,#sidemenu1-5,#sidemenu1-6,#sidemenu1-7,#sidemenu1-8,#sidemenu1-9,#sidemenu1-10{
+    position: fixed;
+    top:0px;
+    left:0px;
+    height: 100vh;
+    width:250px;
+    background-color: #8bb6f7; 
+    transform: translateX(-100%);
+    transition: .4s;
+    z-index: 10;
+}
+#menulist2-0,#menulist2-1,#menulist2-2,#menulist2-3,#menulist2-4,#menulist2-5,#menulist2-6,#menulist2-7,#menulist2-8,#menulist2-9,#menulist2-10{
+    top:50px;
+    position: absolute;
+    list-style: none;
+
+}
+#sidemenu2-1,#sidemenu2-2,#sidemenu2-3,#sidemenu2-4,#sidemenu2-5,#sidemenu2-6,#sidemenu2-7,#sidemenu2-8,#sidemenu2-9,#sidemenu2-10{
+    position: fixed;
+    top:0px;
+    left:0px;
+    height: 100vh;
+    width:250px;
+    background-color: #8bb6f7; 
+    transform: translateX(-100%);
+    transition: .4s;
+    
+}
+.arrow-icon{
+    position: absolute;
+    margin-left: 10px;
+}
+
+/* 아이콘 hover 기능 */
+.bulb_icon:hover{
+    background-image: url(/images/question1.png);
+    opacity: 1;
+}
+.close_icon:hover{
+    opacity: 1;
+}
+/* 코로나지도 옆에 신규확진자 */
+ #corona-map{
+    top:320px;
+    height:700px;
+    width:100%;
+    position: absolute;
+   
+} 
+/* 코로나 차트 */
+ #coronachart{
+    top:0px;
+    height:700px;
+    width:28%;
+    left:58%;
+    position:absolute;
+    
+} 
+#coronachart table{
+    margin-top: 20px;
+    text-align: center;
+}
+#coronachart table thead{background-color: black;
+color:#fff}
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> API 연습</title>
+</head>
+
+<body>
+    <h1>코로나 api 가져오기</h1>
+    <p></p>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+        $.ajax({
+            method: "GET",
+            url: "https://api.corona-19.kr/korea/country/new/?serviceKey=7TNc6tdHG3bajrI9VBeAoUPpgCMO8Ww2u",
+            //data: { name: "John", location: "Boston" }
+        })
+            .done(function (msg) {
+                console.log(msg);
+                console.log(msg.seoul);
+                console.log(msg.gyeonggi);
+                console.log(msg.chungbuk);
+                console.log(msg.chungnam);
+                console.log(msg.gangwon);
+                console.log(msg.gyeongbuk);
+                console.log(msg.gyeongnam);
+                console.log(msg.jeju);
+                console.log(msg.jeonbuk);
+                console.log(msg.jeonnam);
+                console.log(msg.korea);
+                $( "p" ).append( "<strong>"+ msg.seoul.newCase+"</strong>" );
+                $( "p" ).append( "<strong>"+ msg.gyeonggi+"</strong>" );
+            });
+    </script>
+
+<script>
+    $.ajax({
+        method: "GET",
+        url: "https://api.corona-19.kr/korea/?serviceKey=7TNc6tdHG3bajrI9VBeAoUPpgCMO8Ww2u",
+    })
+        .done(function (msg) {
+            console.log(msg);
+            $( "p" ).append( "<strong>"+ msg.city1n+"</strong>" );
+            $( "p" ).append( "<strong>"+ msg.city2n+"</strong>" );
+            $( "p" ).append( "<strong>"+ msg.city3n+"</strong>" );
+            $( "p" ).append( "<strong>"+ msg.city4n+"</strong>" );
+            $( "p" ).append( "<strong>"+ msg.city5n+"</strong>" );
+        });
+</script>
+
+
+</body>
+
+</html>

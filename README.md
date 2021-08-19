@@ -24,8 +24,10 @@
 
 [영업소 등록하기 절차]
 1. XAMPP 설치(https://www.apachefriends.org/download.html)
-2. Apache, MySQL start 버튼 누르기
-3. shell에 sungshin 데이터베이스 만들기
-4. 웹에 localhost/tables.php 입력하여 table 생성 확인하기
-5. 영업소 등록하기 눌러서 정보를 입력하여 제출하기 -> 제출 성공 확인하기
-6. 웹이 localhost/result.php 입력하여 table에 정보 입력받은 것 확인하기
+2. Apache config에서 다운받은 파일의 경로로 수정하기
+   (DocumentRoot, Directory 두 부분 모두 수정)
+3. Apache, MySQL start 버튼 누르기
+4. shell에 sungshin 데이터베이스 만들기
+5. 웹에 localhost/tables.php 입력하여 table 생성 확인하기
+6. 영업소 등록하기 눌러서 정보를 입력하여 제출하기 -> 제출 성공 확인하기
+7. 웹이 localhost/result.php 입력하여 table에 정보 입력받은 것 확인하기

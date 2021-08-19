@@ -310,7 +310,7 @@ def naksanparkreview(request):
 def seoulforestreview(request):
     return render(request, './서울/명소 리뷰작성/서울숲리뷰작성.html')
 def seoulmuseumreview(request):
-    return render(request, './서울/명소 리뷰작성/서울시립미술관.html')
+    return render(request, './서울/명소 리뷰작성/서울시립미술관리뷰작성.html')
 def seoulchildrenparkreview(request):
     return render(request, './서울/명소 리뷰작성/서울어린이대공원리뷰작성.html')
 def skyparkreview(request):

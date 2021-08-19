@@ -359,7 +359,7 @@ def pnb(request):
 def koreareview(request):
     return render(request, './전북/맛집 리뷰작성/한국집리뷰작성.html')
 def kyodongreview(request):
-    return render(request, './전북/맛집 리뷰작성/교동다원리뷰작성.html')
+    return render(request, './전북/맛집 리뷰작성/교동다윈리뷰작성.html')
 def myungmoonreview(request):
     return render(request, './전북/맛집 리뷰작성/명문제과리뷰작성.html')
 def yong2review(request):
@@ -450,9 +450,9 @@ def undermountain(request):
 def akiaki(request):
     return render(request, './충북/맛집/아키아키.html')
 def ddeokborareview(request):
-    return render(request, './충북/맛집 리뷰성/떡보라.html')
+    return render(request, './충북/맛집 리뷰/떡보라.html')
 def ddeulreview(request):
-    return render(request, './충북/맛집 리뷰/뜰이있는집.html')
+    return render(request, './충북/맛집 리뷰/뜰이있는짐.html')
 def undermountainreview(request):
     return render(request, './충북/맛집 리뷰/산아래.html')
 def akiakireview(request):

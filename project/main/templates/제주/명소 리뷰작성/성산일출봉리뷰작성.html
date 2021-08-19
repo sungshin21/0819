@@ -28,16 +28,15 @@
     <title>전국 여행의 시작, 이곳저곳</title>
   </head>
   <body>
-      <div class="container">
-        <form action="">
+    <div class="container">
+      <form action="">
         <nav id="outside__menu"></nav>
         <div id="review">
           <div id="review-item">
-          <!--리뷰참여 팝업창-->
            <!-- 리뷰참여 창: 누르면 뜨는 창-->
             <nav id="pop">
 
-              <a class="review-contentname1"><img id="review-logo" src="{% static 'css/world.png' %}" alt="logo"><p>리뷰 참여하기</p></a>  
+              <a class="review-contentname1"><img id="review-logo" src="/images/world.png" alt="logo"><p>리뷰 참여하기</p></a>  
               <hr>
               
               <div class="name">
@@ -67,29 +66,29 @@
     
                <p class="review-content">나이대</p>
                <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">~초등학교</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">10대</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">20대</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">30대</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">40대</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">50+</button>
+                <button id="age1" type="button" class="btn btn-sm btn-outline-secondary">~초등학교</button>
+                <button id="age2" type="button" class="btn btn-sm btn-outline-secondary">10대</button>
+                <button id="age3" type="button" class="btn btn-sm btn-outline-secondary">20대</button>
+                <button id="age4" type="button" class="btn btn-sm btn-outline-secondary">30대</button>
+                <button id="age5" type="button" class="btn btn-sm btn-outline-secondary">40대</button>
+                <button id="age6" type="button" class="btn btn-sm btn-outline-secondary">50+</button>
               </div> 
     
               <p class="review-content">누구와의 방문</p>
               <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">가족</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">친구</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">연인</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">기타</button>
+                <button id="family" type="button" class="btn btn-sm btn-outline-secondary">가족</button>
+                <button id="friend" type="button" class="btn btn-sm btn-outline-secondary">친구</button>
+                <button id="lover" type="button" class="btn btn-sm btn-outline-secondary">연인</button>
+                <button id="other" type="button" class="btn btn-sm btn-outline-secondary">기타</button>
               </div> 
                       
               <p class="review-content">의견</p>
               <div class="review-commenting">
                 <span class="input-group-text">의견 남기기</span>
-                <textarea class="form-control" aria-label="With textarea"></textarea>            
+                <textarea id="comment" class="form-control" aria-label="With textarea"></textarea>            
               </div>
               <div id="submit">
-                <button class="submit" type="submit" _msthash="1634243" _msttexthash="21528260">제출</button>
+                <button class="submit" type="submit" _msthash="1634243" _msttexthash="21528260" onclick="submitReview()">제출</button>
               </div>
     
     
@@ -100,16 +99,16 @@
     </div>
     <script>
       const form = document.querySelector('form');
-  
+
       form.addEventListener('submit', function(e) {
         // 페이지 이동 방지
         e.preventDefault();
         console.log('submit!')
       })
       // 작성한 리뷰 서버로 전송
-  
+
       function submitReview() {
-  
+
         const name = '성산일출봉';
         const nickname = document.querySelector('.form-name').value;
   
@@ -123,7 +122,7 @@
         const friend = document.querySelector('#friend').style.color == 'rgb(255, 255, 255)'
         const lover = document.querySelector('#lover').style.color == 'rgb(255, 255, 255)'
         const other = document.querySelector('#other').style.color == 'rgb(255, 255, 255)'
-  
+
         
         const age1 = document.querySelector('#age1').style.color == 'rgb(255, 255, 255)'
         const age2 = document.querySelector('#age2').style.color == 'rgb(255, 255, 255)'
@@ -131,9 +130,9 @@
         const age4 = document.querySelector('#age4').style.color == 'rgb(255, 255, 255)'
         const age5 = document.querySelector('#age5').style.color == 'rgb(255, 255, 255)'
         const age6 = document.querySelector('#age6').style.color == 'rgb(255, 255, 255)'
-  
+
         const comment = document.querySelector('#comment').value;
-  
+
         let rate = null;
         if (rating5) {
           rate = 5;
@@ -146,7 +145,7 @@
         } else if (rating1) {
           rate = 1;
         }
-  
+
         let companion = null;
         if (family) {
           companion = 'family'
@@ -157,7 +156,7 @@
         } else if (other) {
           companion = 'other'
         }
-  
+
         let age = null;
         if (age1) {
           age = '~초등학교'
@@ -172,9 +171,9 @@
         }  else if (age6) {
           age = '50+'
         } 
-  
+
         console.log({nickname,rate,companion,comment,age})
-  
+
         // 누락된 필드가 있으면 안됨
         if (!nickname || !rate || !companion || !comment || !age) {
           alert('리뷰가 완성되지 않았습니다.')
@@ -197,7 +196,7 @@
           console.log(e);
         })
       }
-  
+
     </script>
 </body>
 </html>

@@ -450,7 +450,7 @@ def undermountain(request):
 def akiaki(request):
     return render(request, './충북/맛집/아키아키.html')
 def ddeokborareview(request):
-    return render(request, './충북/맛집 리뷰성/떡보라.html')
+    return render(request, './충북/맛집 리뷰/떡보라.html')
 def ddeulreview(request):
     return render(request, './충북/맛집 리뷰/뜰이있는집.html')
 def undermountainreview(request):

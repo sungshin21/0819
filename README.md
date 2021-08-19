@@ -8,9 +8,10 @@
 
 [리뷰 작성하기 절차]
 1. MySQL 활용하여 TESTDB 데이터베이스 생성하기
-2. NodeJS LTS 버전 설치하기(https://nodejs.org/en/)
+2. Node.JS LTS 버전 설치하기(https://nodejs.org/en/)
+3. 백엔드 터미널에 node create_tables 입력하기
 3. 벡엔드 터미널에 node index 입력하기
-4. 
+
 
 [로그인, 회원가입 절차]
 1. 터미널에 $ python manage.py createsuperuser 입력

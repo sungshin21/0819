@@ -28,17 +28,16 @@
     <title>전국 여행의 시작, 이곳저곳</title>
   </head>
   <body>
-      <div class="container">
+    <div class="container">
+      <form action="">
         <nav id="outside__menu"></nav>
         <div id="review">
           <div id="review-item">
-          <!--리뷰참여 팝업창-->
            <!-- 리뷰참여 창: 누르면 뜨는 창-->
             <nav id="pop">
-
+  
               <a class="review-contentname1"><img id="review-logo" src="{% static 'css/world.png' %}" alt="logo"><p>리뷰 참여하기</p></a>  
               <hr>
-              
               
               <div class="name">
                 <p class="review-content">닉네임 설정하기</p>
@@ -67,37 +66,38 @@
     
                <p class="review-content">나이대</p>
                <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">~초등학교</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">10대</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">20대</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">30대</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">40대</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">50+</button>
+                <button id="age1" type="button" class="btn btn-sm btn-outline-secondary">~초등학교</button>
+                <button id="age2" type="button" class="btn btn-sm btn-outline-secondary">10대</button>
+                <button id="age3" type="button" class="btn btn-sm btn-outline-secondary">20대</button>
+                <button id="age4" type="button" class="btn btn-sm btn-outline-secondary">30대</button>
+                <button id="age5" type="button" class="btn btn-sm btn-outline-secondary">40대</button>
+                <button id="age6" type="button" class="btn btn-sm btn-outline-secondary">50+</button>
               </div> 
     
               <p class="review-content">누구와의 방문</p>
               <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">가족</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">친구</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">연인</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">기타</button>
+                <button id="family" type="button" class="btn btn-sm btn-outline-secondary">가족</button>
+                <button id="friend" type="button" class="btn btn-sm btn-outline-secondary">친구</button>
+                <button id="lover" type="button" class="btn btn-sm btn-outline-secondary">연인</button>
+                <button id="other" type="button" class="btn btn-sm btn-outline-secondary">기타</button>
               </div> 
                       
               <p class="review-content">의견</p>
               <div class="review-commenting">
                 <span class="input-group-text">의견 남기기</span>
-                <textarea class="form-control" aria-label="With textarea"></textarea>            
+                <textarea id="comment" class="form-control" aria-label="With textarea"></textarea>            
               </div>
               <div id="submit">
-                <button class="submit" type="submit" _msthash="1634243" _msttexthash="21528260">제출</button>
+                <button class="submit" type="submit" _msthash="1634243" _msttexthash="21528260" onclick="submitReview()">제출</button>
               </div>
     
     
             </nav>
           </div>
         </div> 
-    
+      </form>
     </div>
+      
     <script>
       const form = document.querySelector('form');
   

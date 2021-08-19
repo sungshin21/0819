@@ -467,10 +467,10 @@ def danyangaquarium(request):
 def euforest(request):
     return render(request, './충북/명소/의림지.html')
 def gosureview(request):
-    return render(request, './충북/명소 리뷰작성/고수동굴.html')
+    return render(request, './충북/명소 리뷰/고수동굴.html')
 def danyangaquariumreview(request):
-    return render(request, './충북/명소 리뷰작성/단양다누리아쿠아리움.html')
+    return render(request, './충북/명소 리뷰/단양다누리아쿠아리움.html')
 def euforestreview(request):
-    return render(request, './충북/명소 리뷰작성/의림지.html')
+    return render(request, './충북/명소 리뷰/의림지.html')
 
 

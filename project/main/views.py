@@ -310,7 +310,7 @@ def naksanparkreview(request):
 def seoulforestreview(request):
     return render(request, './서울/명소 리뷰작성/서울숲리뷰작성.html')
 def seoulmuseumreview(request):
-    return render(request, './서울/명소 리뷰작성/서울시립미술관.html')
+    return render(request, './서울/명소 리뷰작성/서울시립미술관리뷰작성.html')
 def seoulchildrenparkreview(request):
     return render(request, './서울/명소 리뷰작성/서울어린이대공원리뷰작성.html')
 def skyparkreview(request):
@@ -432,11 +432,11 @@ def goongnam(request):
 def haemi(request):
     return render(request, './충남/명소/해미읍성.html')
 def gaewhaartparkreview(request):
-    return render(request, './충남/명소 리뷰/개화예술공원리뷰작성.html')
+    return render(request, './충남/명소 리뷰작성/개화예술공원리뷰작성.html')
 def goongnamreview(request):
-    return render(request, './충남/명소 리뷰/궁남지리뷰작성.html')
+    return render(request, './충남/명소 리뷰작성/궁남지리뷰작성.html')
 def haemireview(request):
-    return render(request, './충남/명소 리뷰/해미읍성리뷰작성.html')
+    return render(request, './충남/명소 리뷰작성/해미읍성리뷰작성.html')
 
 
 
@@ -467,10 +467,10 @@ def danyangaquarium(request):
 def euforest(request):
     return render(request, './충북/명소/의림지.html')
 def gosureview(request):
-    return render(request, './충북/명소 리뷰작성/고수동굴.html')
+    return render(request, './충북/명소 리뷰/고수동굴.html')
 def danyangaquariumreview(request):
-    return render(request, './충북/명소 리뷰작성/단양다누리아쿠아리움.html')
+    return render(request, './충북/명소 리뷰/단양다누리아쿠아리움.html')
 def euforestreview(request):
-    return render(request, './충북/명소 리뷰작성/의림지.html')
+    return render(request, './충북/명소 리뷰/의림지.html')
 
 

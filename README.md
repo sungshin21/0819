@@ -1,19 +1,23 @@
 # 2021sw
 <이곳저곳 홈페이지: 먹거리 추천과 관광명소 추천>
 
-[장고 활용하기 절차(전체 페이지 확인)]
-1. VS Code 터미널에 장고 설치하기(pip install django)
-2. 경로를 project 폴더 내부로 이동시키기(cd project)
-3. Django 8000서버로 프로젝트 실행하기(python manage.py runserver)
+[사전 절차(전체 페이지 확인)]
 
-[리뷰 작성하기 절차]
+*데이터베이스 절차
 1. MySQL 활용하여 TESTDB 데이터베이스 생성하기
 2. Node.JS LTS 버전 설치하기(https://nodejs.org/en/)
-3. 백엔드 터미널에 node create_tables 입력하기
-3. 벡엔드 터미널에 node index 입력하기
+3. 경로를 2021sw-backend 폴더 내부로 이동시키기 (cd 2021sw-backend)
+4. 백엔드 터미널에 node create_tables 입력하기
+5. 벡엔드 터미널에 node index 입력하기
+
+*장고 활용하기 절차
+6. VS Code 터미널에 장고 설치하기(pip install django)
+7. 경로를 project 폴더 내부로 이동시키기(cd project)
+8. Django 8000서버로 프로젝트 실행하기(python manage.py runserver)
 
 
-[로그인, 회원가입 절차]
+
+[로그인, 회원가입 데이터베이스 확인 절차]
 1. 터미널에 $ python manage.py createsuperuser 입력
 2. 비밀번호까지 입력 후 (http://127.0.0.1:8000/admin/) 으로 이동
 3. 회원가입한 사용자 확인 가능

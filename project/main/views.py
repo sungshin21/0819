@@ -432,11 +432,11 @@ def goongnam(request):
 def haemi(request):
     return render(request, './충남/명소/해미읍성.html')
 def gaewhaartparkreview(request):
-    return render(request, './충남/명소 리뷰/개화예술공원리뷰작성.html')
+    return render(request, './충남/명소 리뷰작성/개화예술공원리뷰작성.html')
 def goongnamreview(request):
-    return render(request, './충남/명소 리뷰/궁남지리뷰작성.html')
+    return render(request, './충남/명소 리뷰작성/궁남지리뷰작성.html')
 def haemireview(request):
-    return render(request, './충남/명소 리뷰/해미읍성리뷰작성.html')
+    return render(request, './충남/명소 리뷰작성/해미읍성리뷰작성.html')
 
 
 

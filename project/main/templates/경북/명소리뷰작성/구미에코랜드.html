@@ -28,175 +28,175 @@
     <title>전국 여행의 시작, 이곳저곳</title>
   </head>
   <body>
-      <div class="container">
-        <nav id="outside__menu"></nav>
-        <div id="review">
-          <div id="review-item">
-          <!--리뷰참여 팝업창-->
-           <!-- 리뷰참여 창: 누르면 뜨는 창-->
-            <nav id="pop">
+  <div class="container">
+    <form action="">
+      <nav id="outside__menu"></nav>
+      <div id="review">
+        <div id="review-item">
+         <!-- 리뷰참여 창: 누르면 뜨는 창-->
+          <nav id="pop">
 
-              <a class="review-contentname1"><img id="review-logo" src="{% static 'css/world.png' %}" alt="logo"><p>리뷰 참여하기</p></a>  
-              <hr>
-              
-              <div class="name">
-                <p class="review-content">닉네임 설정하기</p>
-                <div class="review-commenting">
-                  <textarea class="form-name" aria-label="With textarea"></textarea>
-                </div>        
-              </div>  
-              
-              <div class="review_rating">
-                <br>
-                <p class="review-content">별점</p>
-                <div class="warning_msg">별점을 선택해 주세요.</div>
-                <div class="rating">
-                    <!-- 해당 별점을 클릭하면 해당 별과 그 왼쪽의 모든 별의 체크박스에 checked 적용 -->
-                    <input type="checkbox" name="rating" id="rating1" value="1" class="rate_radio" title="1점">
-                    <label for="rating1"></label>
-                    <input type="checkbox" name="rating" id="rating2" value="2" class="rate_radio" title="2점">
-                    <label for="rating2"></label>
-                    <input type="checkbox" name="rating" id="rating3" value="3" class="rate_radio" title="3점" >
-                    <label for="rating3"></label>
-                    <input type="checkbox" name="rating" id="rating4" value="4" class="rate_radio" title="4점">
-                    <label for="rating4"></label>
-                    <input type="checkbox" name="rating" id="rating5" value="5" class="rate_radio" title="5점">
-                    <label for="rating5"></label>
-                </div></div>
-    
-               <p class="review-content">나이대</p>
-               <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">~초등학교</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">10대</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">20대</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">30대</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">40대</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">50+</button>
-              </div> 
-    
-              <p class="review-content">누구와의 방문</p>
-              <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">가족</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">친구</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">연인</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">기타</button>
-              </div> 
-                      
-              <p class="review-content">의견</p>
+            <a class="review-contentname1"><img id="review-logo" src="../../../static/images/world.png" alt="logo"><p>리뷰 참여하기</p></a>  
+            <hr>
+            
+            <div class="name">
+              <p class="review-content">닉네임 설정하기</p>
               <div class="review-commenting">
-                <span class="input-group-text">의견 남기기</span>
-                <textarea class="form-control" aria-label="With textarea"></textarea>            
-              </div>
-              <div id="submit">
-                <button class="submit" type="submit" _msthash="1634243" _msttexthash="21528260">제출</button>
-              </div>
-    
-    
-            </nav>
-          </div>
-        </div> 
-    
-    </div>
-    <script>
-      const form = document.querySelector('form');
+                <textarea class="form-name" aria-label="With textarea"></textarea>
+              </div>        
+            </div>  
+            
+            <div class="review_rating">
+              <br>
+              <p class="review-content">별점</p>
+              <div class="warning_msg">별점을 선택해 주세요.</div>
+              <div class="rating">
+                  <!-- 해당 별점을 클릭하면 해당 별과 그 왼쪽의 모든 별의 체크박스에 checked 적용 -->
+                  <input type="checkbox" name="rating" id="rating1" value="1" class="rate_radio" title="1점">
+                  <label for="rating1"></label>
+                  <input type="checkbox" name="rating" id="rating2" value="2" class="rate_radio" title="2점">
+                  <label for="rating2"></label>
+                  <input type="checkbox" name="rating" id="rating3" value="3" class="rate_radio" title="3점" >
+                  <label for="rating3"></label>
+                  <input type="checkbox" name="rating" id="rating4" value="4" class="rate_radio" title="4점">
+                  <label for="rating4"></label>
+                  <input type="checkbox" name="rating" id="rating5" value="5" class="rate_radio" title="5점">
+                  <label for="rating5"></label>
+              </div></div>
   
-      form.addEventListener('submit', function(e) {
-        // 페이지 이동 방지
-        e.preventDefault();
-        console.log('submit!')
-      })
-      // 작성한 리뷰 서버로 전송
+             <p class="review-content">나이대</p>
+             <div class="btn-group">
+              <button id="age1" type="button" class="btn btn-sm btn-outline-secondary">~초등학교</button>
+              <button id="age2" type="button" class="btn btn-sm btn-outline-secondary">10대</button>
+              <button id="age3" type="button" class="btn btn-sm btn-outline-secondary">20대</button>
+              <button id="age4" type="button" class="btn btn-sm btn-outline-secondary">30대</button>
+              <button id="age5" type="button" class="btn btn-sm btn-outline-secondary">40대</button>
+              <button id="age6" type="button" class="btn btn-sm btn-outline-secondary">50+</button>
+            </div> 
   
-      function submitReview() {
+            <p class="review-content">누구와의 방문</p>
+            <div class="btn-group">
+              <button id="family" type="button" class="btn btn-sm btn-outline-secondary">가족</button>
+              <button id="friend" type="button" class="btn btn-sm btn-outline-secondary">친구</button>
+              <button id="lover" type="button" class="btn btn-sm btn-outline-secondary">연인</button>
+              <button id="other" type="button" class="btn btn-sm btn-outline-secondary">기타</button>
+            </div> 
+                    
+            <p class="review-content">의견</p>
+            <div class="review-commenting">
+              <span class="input-group-text">의견 남기기</span>
+              <textarea id="comment" class="form-control" aria-label="With textarea"></textarea>            
+            </div>
+            <div id="submit">
+              <button class="submit" type="submit" _msthash="1634243" _msttexthash="21528260" onclick="submitReview()">제출</button>
+            </div>
   
-        const name = '구미에코랜드';
-        const nickname = document.querySelector('.form-name').value;
   
-        const rating1 = document.querySelector('#rating1').checked;
-        const rating2 = document.querySelector('#rating2').checked;
-        const rating3 = document.querySelector('#rating3').checked;
-        const rating4 = document.querySelector('#rating4').checked;
-        const rating5 = document.querySelector('#rating5').checked;
-  
-        const family = document.querySelector('#family').style.color == 'rgb(255, 255, 255)'
-        const friend = document.querySelector('#friend').style.color == 'rgb(255, 255, 255)'
-        const lover = document.querySelector('#lover').style.color == 'rgb(255, 255, 255)'
-        const other = document.querySelector('#other').style.color == 'rgb(255, 255, 255)'
-  
-        
-        const age1 = document.querySelector('#age1').style.color == 'rgb(255, 255, 255)'
-        const age2 = document.querySelector('#age2').style.color == 'rgb(255, 255, 255)'
-        const age3 = document.querySelector('#age3').style.color == 'rgb(255, 255, 255)'
-        const age4 = document.querySelector('#age4').style.color == 'rgb(255, 255, 255)'
-        const age5 = document.querySelector('#age5').style.color == 'rgb(255, 255, 255)'
-        const age6 = document.querySelector('#age6').style.color == 'rgb(255, 255, 255)'
-  
-        const comment = document.querySelector('#comment').value;
-  
-        let rate = null;
-        if (rating5) {
-          rate = 5;
-        } else if (rating4) {
-          rate = 4;
-        } else if (rating3) {
-          rate = 3;
-        } else if (rating2) {
-          rate = 2;
-        } else if (rating1) {
-          rate = 1;
-        }
-  
-        let companion = null;
-        if (family) {
-          companion = 'family'
-        } else if (friend) {
-          companion = 'friend'
-        } else if (lover) {
-          companion = 'lover'
-        } else if (other) {
-          companion = 'other'
-        }
-  
-        let age = null;
-        if (age1) {
-          age = '~초등학교'
-        } else if (age2) {
-          age = '10대'
-        }  else if (age3) {
-          age = '20대'
-        }  else if (age4) {
-          age = '30대'
-        }  else if (age5) {
-          age = '40대'
-        }  else if (age6) {
-          age = '50+'
-        } 
-  
-        console.log({nickname,rate,companion,comment,age})
-  
-        // 누락된 필드가 있으면 안됨
-        if (!nickname || !rate || !companion || !comment || !age) {
-          alert('리뷰가 완성되지 않았습니다.')
-          return;
-        }
-        
-        // API 바인딩
-        fetch('http://localhost:3000/place/review', {
-          method: 'POST',
-          headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({name, nickname, rate, age, companion,comment})
-        }).then(() => {
-          alert('리뷰가 등록되었습니다.')
-          location.reload();
-        }).catch((e) => {
-          alert('서버 에러가 발생하였습니다.')
-          console.log(e);
-        })
+          </nav>
+        </div>
+      </div> 
+    </form>
+  </div>
+  <script>
+    const form = document.querySelector('form');
+
+    form.addEventListener('submit', function(e) {
+      // 페이지 이동 방지
+      e.preventDefault();
+      console.log('submit!')
+    })
+    // 작성한 리뷰 서버로 전송
+
+    function submitReview() {
+
+      const name = '구미에코랜드';
+      const nickname = document.querySelector('.form-name').value;
+
+      const rating1 = document.querySelector('#rating1').checked;
+      const rating2 = document.querySelector('#rating2').checked;
+      const rating3 = document.querySelector('#rating3').checked;
+      const rating4 = document.querySelector('#rating4').checked;
+      const rating5 = document.querySelector('#rating5').checked;
+
+      const family = document.querySelector('#family').style.color == 'rgb(255, 255, 255)'
+      const friend = document.querySelector('#friend').style.color == 'rgb(255, 255, 255)'
+      const lover = document.querySelector('#lover').style.color == 'rgb(255, 255, 255)'
+      const other = document.querySelector('#other').style.color == 'rgb(255, 255, 255)'
+
+      
+      const age1 = document.querySelector('#age1').style.color == 'rgb(255, 255, 255)'
+      const age2 = document.querySelector('#age2').style.color == 'rgb(255, 255, 255)'
+      const age3 = document.querySelector('#age3').style.color == 'rgb(255, 255, 255)'
+      const age4 = document.querySelector('#age4').style.color == 'rgb(255, 255, 255)'
+      const age5 = document.querySelector('#age5').style.color == 'rgb(255, 255, 255)'
+      const age6 = document.querySelector('#age6').style.color == 'rgb(255, 255, 255)'
+
+      const comment = document.querySelector('#comment').value;
+
+      let rate = null;
+      if (rating5) {
+        rate = 5;
+      } else if (rating4) {
+        rate = 4;
+      } else if (rating3) {
+        rate = 3;
+      } else if (rating2) {
+        rate = 2;
+      } else if (rating1) {
+        rate = 1;
       }
-  
-    </script>
+
+      let companion = null;
+      if (family) {
+        companion = 'family'
+      } else if (friend) {
+        companion = 'friend'
+      } else if (lover) {
+        companion = 'lover'
+      } else if (other) {
+        companion = 'other'
+      }
+
+      let age = null;
+      if (age1) {
+        age = '~초등학교'
+      } else if (age2) {
+        age = '10대'
+      }  else if (age3) {
+        age = '20대'
+      }  else if (age4) {
+        age = '30대'
+      }  else if (age5) {
+        age = '40대'
+      }  else if (age6) {
+        age = '50+'
+      } 
+
+      console.log({nickname,rate,companion,comment,age})
+
+      // 누락된 필드가 있으면 안됨
+      if (!nickname || !rate || !companion || !comment || !age) {
+        alert('리뷰가 완성되지 않았습니다.')
+        return;
+      }
+      
+      // API 바인딩
+      fetch('http://localhost:3000/place/review', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({name, nickname, rate, age, companion,comment})
+      }).then(() => {
+        alert('리뷰가 등록되었습니다.')
+        location.reload();
+      }).catch((e) => {
+        alert('서버 에러가 발생하였습니다.')
+        console.log(e);
+      })
+    }
+
+  </script>
 </body>
 </html>

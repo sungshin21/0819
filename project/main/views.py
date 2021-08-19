@@ -432,11 +432,11 @@ def goongnam(request):
 def haemi(request):
     return render(request, './충남/명소/해미읍성.html')
 def gaewhaartparkreview(request):
-    return render(request, './충남/명소 리뷰작성/개화예술공원리뷰작성.html')
+    return render(request, './충남/명소 리뷰/개화예술공원리뷰작성.html')
 def goongnamreview(request):
-    return render(request, './충남/명소 리뷰작성/궁남지리뷰작성.html')
+    return render(request, './충남/명소 리뷰/궁남지리뷰작성.html')
 def haemireview(request):
-    return render(request, './충남/명소 리뷰작성/해미읍성리뷰작성.html')
+    return render(request, './충남/명소 리뷰/해미읍성리뷰작성.html')
 
 
 
@@ -450,13 +450,13 @@ def undermountain(request):
 def akiaki(request):
     return render(request, './충북/맛집/아키아키.html')
 def ddeokborareview(request):
-    return render(request, './충북/맛집 리뷰작성/떡보라.html')
+    return render(request, './충북/맛집 리뷰성/떡보라.html')
 def ddeulreview(request):
-    return render(request, './충북/맛집 리뷰작성/뜰이있는집.html')
+    return render(request, './충북/맛집 리뷰/뜰이있는집.html')
 def undermountainreview(request):
-    return render(request, './충북/맛집 리뷰작성/산아래.html')
+    return render(request, './충북/맛집 리뷰/산아래.html')
 def akiakireview(request):
-    return render(request, './충북/맛집 리뷰작성/아키아키.html')
+    return render(request, './충북/맛집 리뷰/아키아키.html')
 
 
 

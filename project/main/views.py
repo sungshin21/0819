@@ -349,7 +349,7 @@ def hyangillreview(request):
 def korea(request):
     return render(request, './전북/맛집/한국집.html')
 def kyodong(request):
-    return render(request, './전북/맛집/교동다윈.html')
+    return render(request, './전북/맛집/교동다원.html')
 def myungmoon(request):
     return render(request, './전북/맛집/명문제과.html')
 def yong2(request):
@@ -359,7 +359,7 @@ def pnb(request):
 def koreareview(request):
     return render(request, './전북/맛집 리뷰작성/한국집리뷰작성.html')
 def kyodongreview(request):
-    return render(request, './전북/맛집 리뷰작성/교동다원리뷰작성.html')
+    return render(request, './전북/맛집 리뷰작성/교동다윈리뷰작성.html')
 def myungmoonreview(request):
     return render(request, './전북/맛집 리뷰작성/명문제과리뷰작성.html')
 def yong2review(request):

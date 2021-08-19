@@ -284,13 +284,13 @@ def mdgjreview(request):
 def mokporeview(request):
     return render(request, './서울/맛집 리뷰작성/목포집리뷰작성.html')
 def osakaharureview(request):
-    return render(request, './서울/맛집 리뷰작성/서울오사카하루리뷰작성.html')
+    return render(request, './서울/맛집 리뷰작성/오사카하루리뷰작성.html')
 def shinsacowreview(request):
     return render(request, './서울/맛집 리뷰작성/신사소곱창리뷰작성.html')
 def uraeokreview(request):
     return render(request, './서울/맛집 리뷰작성/우래옥리뷰작성.html')
 def ichijenreview(request):
-    return render(request, './서울/맛집 리뷰작성/이치젠(일식당)리뷰작성.html')
+    return render(request, './서울/맛집 리뷰작성/이치젠리뷰작성.html')
 def c27review(request):
     return render(request, './서울/맛집 리뷰작성/C27리뷰작성.html')
 
@@ -310,7 +310,7 @@ def naksanparkreview(request):
 def seoulforestreview(request):
     return render(request, './서울/명소 리뷰작성/서울숲리뷰작성.html')
 def seoulmuseumreview(request):
-    return render(request, './서울/명소 리뷰작성/경주동궁원리뷰작성.html')
+    return render(request, './서울/명소 리뷰작성/서울시립미술관.html')
 def seoulchildrenparkreview(request):
     return render(request, './서울/명소 리뷰작성/서울어린이대공원리뷰작성.html')
 def skyparkreview(request):
@@ -327,11 +327,11 @@ def clbbread(request):
 def kyeongdoreview(request):
     return render(request, './전남/맛집 리뷰작성/경도회관리뷰작성.html')
 def flowerstonereview(request):
-    return render(request, './전남/맛집 리뷰작성/꽃돌게장1번가리뷰작성.html')
+    return render(request, './전남/맛집 리뷰작성/꽃돌게장리뷰작성.html')
 def najubearreview(request):
-    return render(request, './전남/맛집 리뷰작성/나주곰탕하얀집리뷰작성.html')
+    return render(request, './전남/맛집 리뷰작성/나주곰탕리뷰작성.html')
 def clbbreadreview(request):
-    return render(request, './전남/맛집 리뷰작성/씨엘비베이커리리뷰작성.html')
+    return render(request, './전남/맛집 리뷰작성/씨엘비리뷰작성.html')
 
 def damyang(request):
     return render(request, './전남/명소/담양죽녹원.html')
@@ -349,7 +349,7 @@ def hyangillreview(request):
 def korea(request):
     return render(request, './전북/맛집/한국집.html')
 def kyodong(request):
-    return render(request, './전북/맛집/교동다원.html')
+    return render(request, './전북/맛집/교동다윈.html')
 def myungmoon(request):
     return render(request, './전북/맛집/명문제과.html')
 def yong2(request):
@@ -365,7 +365,7 @@ def myungmoonreview(request):
 def yong2review(request):
     return render(request, './전북/맛집 리뷰작성/쌍용반점리뷰작성.html')
 def pnbreview(request):
-    return render(request, './전북/맛집 리뷰작성/PNB풍년제과리뷰작성.html')
+    return render(request, './전북/맛집 리뷰작성/PNB리뷰작성.html')
 
 def goonsan(request):
     return render(request, './전북/명소/군산구불길.html')
@@ -404,7 +404,7 @@ def sungsanreview(request):
 def andolreview(request):
     return render(request, './제주/명소 리뷰작성/안돌오름리뷰작성.html')
 def jetboatreview(request):
-    return render(request, './제주/명소 리뷰작성/제주제트보트리뷰작성.html')
+    return render(request, './제주/명소 리뷰작성/제트보트리뷰작성.html')
 
 def dduju(request):
     return render(request, './충남/맛집/뚜쥬루과자점.html')
@@ -421,7 +421,7 @@ def countrymealreview(request):
 def jangwonreview(request):
     return render(request, './충남/맛집 리뷰작성/장원막국수리뷰작성.html')
 def ddanddookreview(request):
-    return render(request, './충남/맛집 리뷰작성/전통딴뚝칼국수리뷰작성.html')
+    return render(request, './충남/맛집 리뷰작성/전통딴뚝칼국리뷰작성.html')
 
 
 
@@ -432,11 +432,11 @@ def goongnam(request):
 def haemi(request):
     return render(request, './충남/명소/해미읍성.html')
 def gaewhaartparkreview(request):
-    return render(request, './충남/명소 리뷰작성/개화예술공원리뷰작성.html')
+    return render(request, './충남/명소 리뷰/개화예술공원리뷰작성.html')
 def goongnamreview(request):
-    return render(request, './충남/명소 리뷰작성/궁남지리뷰작성.html')
+    return render(request, './충남/명소 리뷰/궁남지리뷰작성.html')
 def haemireview(request):
-    return render(request, './충남/명소 리뷰작성/해미읍성리뷰작성.html')
+    return render(request, './충남/명소 리뷰/해미읍성리뷰작성.html')
 
 
 
@@ -450,13 +450,13 @@ def undermountain(request):
 def akiaki(request):
     return render(request, './충북/맛집/아키아키.html')
 def ddeokborareview(request):
-    return render(request, './충북/맛집 리뷰작성/떡보라.html')
+    return render(request, './충북/맛집 리뷰/떡보라.html')
 def ddeulreview(request):
-    return render(request, './충북/맛집 리뷰작성/뜰이있는집.html')
+    return render(request, './충북/맛집 리뷰/뜰이있는집.html')
 def undermountainreview(request):
-    return render(request, './충북/맛집 리뷰작성/산아래.html')
+    return render(request, './충북/맛집 리뷰/산아래.html')
 def akiakireview(request):
-    return render(request, './충북/맛집 리뷰작성/아키아키.html')
+    return render(request, './충북/맛집 리뷰/아키아키.html')
 
 
 
